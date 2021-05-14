@@ -1,0 +1,260 @@
+:root {
+    --main-color: #002131;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+header {
+    background: url(https://assets.rockwerchter.be/layout/frontend/img/svg/pattern-2021.svg);
+    height: 15rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    display: inline-block;
+    
+    color: #ffffff;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #000000;
+    font-weight: bold;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header li:nth-last-child(1) {
+    background: #000000;
+}
+header li:nth-last-child(1):hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+.date {
+    color: #00ffff;
+}
+
+nav {
+    background: linear-gradient(270deg, #ffa29c 5.19%, #643cfa 100%);
+    height: fit-content;
+    width: fit-content;
+    margin-right: 1rem;
+
+    display: flex;
+    align-self: center;
+}
+
+.announced-date {
+    font-size: 3rem;
+    color: #ffffff;
+    width: 20%;
+    height: fit-content;
+    line-height: 0.8;
+
+    align-self: center;
+    margin-left: 0.6rem;
+}
+
+.filter-days {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.filter-days li {
+    list-style-type: none;
+    padding: 1rem;
+    font-weight: 800;
+}
+
+.blue {
+    color: blue;
+}
+
+
+
+.lineupDiv{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.artist {
+    background: red;
+    margin: 1rem;
+    position: relative;
+    height: 25rem;
+    width: 30%;
+}
+
+.artist h2 {
+    background: linear-gradient(270deg, cyan 0%, #643cfa 50%, #ff690a 100%);
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 0.5rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 3.7rem;
+}
+
+.artist img {
+    width: 100%;
+    height: 100%;
+}
+
+.stage {
+    background: #ffffff;
+    font-size: 1.3rem;
+    position: absolute;
+    padding: 0.3rem;
+    left: 1rem;
+    bottom: 7rem;
+}
+
+.artist-info {
+    width: 60%;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.artist img{
+    width: 100%;
+}
+
+.artist-info .synopsis {
+    line-height: 1.5;
+}
+
+.artist-info a {
+    color: #000000;
+    margin: 0.3rem 0;
+}
+.artist-info__image {
+    position: relative;
+}
+.artist-info__image img {
+    width: 100%;
+}
+
+.artist-info__image h2 {
+    background: linear-gradient(270deg, cyan 0%, #643cfa 50%, #ff690a 100%);
+    padding: 1rem;
+    font-size: 2rem;
+    color: #ffffff;
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+}
+
+.artist-info__image .name-and-day {
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 10rem;
+    left: 1rem;
+}
+
+.bg-blue {
+    background: #0000ff;
+}
+.bg-white{
+    background: #ffffff;
+}
+
+
+iframe{
+    width: 100%;
+    height: 25rem;
+}
+
+.socials li{
+    background: #000000;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.socials a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.socials a:hover{
+    background: #ffffff;
+    color:var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.clockDisplay{
+    font-family: 'Orbitron',
+    sans-serif;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+footer{
+    background: #009;
+    padding: 1rem;
+    line-height: 1.5;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.left a, .middle a, .right{
+    text-decoration: none;
+    color: white;
+}
+
+.left li, .middle li{
+    list-style-type: none;
+}
+
+.right p{
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+input[type=text]{
+    padding: 0.8rem;
+    border: none;
+    width: 300px;
+    background: #009;
+    border: 1px solid white;
+    color: #ffffff;
+}
+
+button{
+    color: var(--main-color);
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
